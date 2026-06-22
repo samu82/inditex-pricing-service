@@ -2,6 +2,9 @@ Markdown
 # Inditex Pricing Service - Prueba Técnica
 
 Servicio REST construido con **Spring Boot 3** y **Java 17** para la consulta de tarifas de precios de productos filtrado por cadena (brand), producto y fecha de aplicación, resolviendo conflictos mediante un sistema de prioridades.
+### A tener en cuenta:
+La prueba se ha hecho en 3 horas y no he tenido tiempo de hacer Refactoring ni quitar los comentarios genéricos de la IA. Normalmente hago una fase de refinamiento para incluir mas test funcionales y otros parámetros.
+
 
 ---
 
