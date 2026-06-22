@@ -92,7 +92,32 @@ JSON
 }
 
 ---
+## Portabilidad (Ejecución en cualquier equipo)
+Este proyecto está configurado para ser **completamente portable**, lo que significa que puedes descargarlo y ejecutarlo en cualquier sistema operativo (Windows, macOS o Linux) **sin necesidad de tener Maven instalado** en tu sistema.
 
+Para lograr esto, el repositorio incluye **Maven Wrapper**. Este componente se encarga de descargar y configurar automáticamente la versión exacta de Maven requerida para el proyecto (`3.9.16`) la primera vez que se ejecuta.
+
+### Cómo ejecutar el proyecto en tu máquina:
+
+1. **Clona el repositorio** en tu equipo.
+2. Abre una terminal en la raíz del proyecto.
+3. Ejecuta el comando correspondiente a tu sistema operativo:
+
+* **En Windows (Command Prompt o PowerShell):**
+```bash
+  mvnw.cmd clean install
+
+```
+* **En Linux / macOS:**
+
+``` Bash
+./mvnw clean install
+```
+
+Gracias a los archivos de configuración incluidos (.gitignore, .gitattributes y .mvn/), el entorno se mantendrá limpio, los saltos de línea se adaptarán a tu sistema operativo y se evitará el clásico problema de "en mi máquina sí funciona".
+
+
+---
 ## 📈 Próximas Mejoras (Production Ready Roadmap)
 Pensando en la integración futura de este servicio dentro de un ecosistema empresarial complejo (conectado de forma nativa con Checkouts, Stock o Frontends externos), se plantean las siguientes evoluciones:
 
@@ -121,4 +146,5 @@ Métricas y Trazabilidad Centralizada: Añadir Spring Boot Actuator, Micrometer 
 Contenedorización Estándar: Crear un archivo Dockerfile multi-stage optimizado utilizando imágenes base distroless o Alpine para reducir la superficie de ataque del despliegue.
 
 Estrategia de Rate Limiting: Implementar un filtro de control de flujo para proteger el servicio contra picos imprevistos de tráfico.
+___
 
