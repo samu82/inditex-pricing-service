@@ -32,11 +32,12 @@ Para arrancar el servidor localmente, ejecuta el siguiente comando en la raíz d
 ```
 
 ## 🗄️ Acceso a la Base de Datos (H2 Console)
-La base de datos se inicializa automáticamente con los datos de prueba del enunciado (schema.sql y data.sql). Puedes acceder a la consola interactiva en:
+
+La base de datos se estructura automáticamente mediante JPA y se inicializa con los datos de prueba del archivo data.sql. Puedes acceder a la consola interactiva en:
 
 URL: http://localhost:8080/h2-console
 
-JDBC URL: jdbc:h2:mem:pricingdb
+JDBC URL: jdbc:h2:mem:pricingdb (Asegúrate de que este nombre coincida con tu spring.datasource.url)
 
 User: sa
 
