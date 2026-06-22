@@ -22,7 +22,7 @@ El proyecto ha sido diseñado siguiendo los principios de la **Arquitectura Hexa
 
 ---
 
-## 🛠️ Instalación y Execución
+## 🛠️ Instalación y Ejecución
 
 Para arrancar el servidor localmente, ejecuta el siguiente comando en la raíz del proyecto:
 
