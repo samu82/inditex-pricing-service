@@ -8,6 +8,8 @@ spring:
     console:
       enabled: true
       path: /h2-console
+      settings:
+        web-allow-others: true
   jpa:
     defer-datasource-initialization: true # <-- ESTA LÍNEA ES CRUCIAL
     hibernate:
